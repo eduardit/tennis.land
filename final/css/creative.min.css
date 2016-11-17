@@ -90,9 +90,11 @@
 .timeline .timeline-heading h4 {
   margin-top: 0;
   color: inherit;
+
 }
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
+  font-weight: bold;
 }
 .timeline .timeline-body > p,
 .timeline .timeline-body > ul {
