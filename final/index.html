@@ -376,14 +376,19 @@
 
     <script>
     function myMap() {
+
       var mapCanvas = document.getElementById("map");
       var myCenter = new google.maps.LatLng(59.4500486,24.8563622);
-      var mapOptions = {center: myCenter, zoom: 17};
+      var mapOptions = {center: myCenter, zoom: 17,scrollwheel: false,
+    navigationControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+    draggable: false,};
       var map = new google.maps.Map(mapCanvas,mapOptions);
       var marker = new google.maps.Marker({position:myCenter});
   	marker.setMap(map);
 
-      marker.setMap(map);
+    marker.setMap(map);
     }
     </script>
 
